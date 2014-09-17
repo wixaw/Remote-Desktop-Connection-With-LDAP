@@ -145,15 +145,9 @@ class GTK_Main():
 		# Fontion > SESSION RDP
 		def connexionRDP(userCO , passwdCO , serveurCO, domaine):
 			
-			#Declarer option rdesktop
-			optionRDP = " -NfzP -a 16 -k fr -x m -r sound:local -r disk:CLEUSB=/media/OLYMPUS/ "
-			
-			#Commande
-			sessionRDP = "/usr/bin/rdesktop -u '%s' -p '%s' %s -d mondomaine %s" % ( userCO , passwdCO , optionRDP, serveurCO )	
-			#print sessionRDP
-			
 			#Executer    
-			os.system(sessionRDP)
+			subprocess.call(['/usr/bin/rdesktop', '-u', userCO, '-p', passwdCO, '-d', 'mecaprotec', '-r', 'sound:local', '-r' , 'disk:CLEUSB=/media/OLYMPUS/', '-NfzP' , '-x' , 'm' ,serveurCO ])
+
 
 
 
