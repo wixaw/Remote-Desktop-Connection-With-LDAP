@@ -1,4 +1,4 @@
-Remote-Desktop-Connection-With-LDAP                                                                                                    
+RDCL - Remote Desktop Connection with LDAP                                                                                                    
 =====
 
 Description :
@@ -11,15 +11,15 @@ Langage :
 
 Dépendances : 
 ---------
-	Binaire RDP : rdesktop ( peut-être remplacer par freeRDP mais des problèmes d'affichages ont était constaté )
-	Librairies : gtk, python-mysqldb, ldap-utils
+	- Binaire RDP : rdesktop ( peut-être remplacer par freeRDP mais des problèmes d'affichages ont était constaté )
+	- Librairies : gtk, python-mysqldb, ldap-utils
 
 Fonctions : 
 ---------
-	Gestion des multi groupe LDAP ( un utilisateur peut avoir droit à se connecter à plusieurs serveurs TSE )
-	Log Connexions/Déconnexion
-	Interface graphique
-	Multi Domaine
+	- Gestion des multi groupe LDAP ( un utilisateur peut avoir droit à se connecter à plusieurs serveurs TSE )
+	- Log Connexions/Déconnexion
+	- Interface graphique
+	- Multi Domaine
 
 Utilisation :
 ---------

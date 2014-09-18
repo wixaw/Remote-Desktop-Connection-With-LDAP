@@ -1,4 +1,4 @@
-Remote-Desktop-Connection-With-LDAP                                                                                                    
+RDCL - Remote Desktop Connection with LDAP                                                                                                     
 =====
 
 Description :
