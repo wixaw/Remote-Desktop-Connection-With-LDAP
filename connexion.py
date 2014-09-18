@@ -89,7 +89,7 @@ class GTK_Main():
 				dateinfo = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 				
 				cursor = db.cursor()
-				sql = "INSERT INTO connexion VALUES (NULL, '%s', '%s', NULL, '%s', '%s')" % ( userLog, dateinfo , monposte , monip )
+				sql = "INSERT INTO logs VALUES (NULL, '%s', '%s', NULL, '%s', '%s')" % ( userLog, dateinfo , monposte , monip )
 				cursor.execute(sql)
 				db.commit()
 				
@@ -123,7 +123,7 @@ class GTK_Main():
 			
 				dateinfoquit = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 				cursor = db.cursor()
-				sql = "UPDATE connexion  SET date_logout='%s' WHERE id=%s" % ( dateinfoquit, infoidLog )
+				sql = "UPDATE logs  SET date_logout='%s' WHERE id=%s" % ( dateinfoquit, infoidLog )
 				cursor.execute(sql)
 				db.commit()
 				db.close()
