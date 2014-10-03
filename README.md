@@ -4,6 +4,7 @@ RDCL - Remote Desktop Connection with LDAP
 Description :
 ---------
 	Ce programme permet la sélection et la connexion RDP à des serveurs Windows TSE par le biais de l'annuaire LDAP
+	Tester et valider sous Debian, Ubuntu et Xubuntu
 
 Langage : 
 ---------
