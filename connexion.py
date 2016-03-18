@@ -146,7 +146,7 @@ class GTK_Main():
 		def connexionRDP(userCO , passwdCO , serveurCO, domaine):
 			
 			#Executer    
-			subprocess.call(['/usr/bin/rdesktop', '-u', userCO, '-p', passwdCO, '-d', 'mecaprotec', '-r', 'sound:local', '-r' , 'disk:CLEUSB=/media/OLYMPUS/', '-NfzP' , '-x' , 'm' ,serveurCO ])
+			subprocess.call(['/usr/bin/rdesktop', '-u', userCO, '-p', passwdCO, '-d', 'domaine', '-r', 'sound:local', '-r' , 'disk:CLEUSB=/media/OLYMPUS/', '-NfzP' , '-x' , 'm' ,serveurCO ])
 
 
 
